@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--Ejercicio 1-->
+
+    h1+h2+p
+    <!--Comando que trata como siblings estos elementos, punto 1 del ejercicio-->
+    h1{Soy un título}+p{y yo soy un párrafo}
+    <!--Comando que trata como siblings elementos con texto, punto 2 del ejercicio-->
+    h1>mark
+    <!--Comando para anidamiento simple punto 3 del ejercicio-->
+    h1>mark{El texto subrayado}
+    <!--Comando para anidamiento con contenido, punto 4 del ejercicio-->
+    ul>li*5
+    <!--Comando para el anidamiento con múltiples elementos, punto 5 del ejercicio-->
+    ul>li{Elemento}*5
+    <!--Comando para anidamiento con múltiples elementos y contenido, punto 6 del ejercicio-->
+
+    <!--Ejercicio 2-->
+
+    table>tr>td*3
+    <!--Comando para tablas, punto 1 del ejercicio-->
+    table>(tr>th*3)+(tr>td*3)
+    <!--Comando para tablas y agrupaciones, punto 2 del ejercicio-->
+
+    <!--Ejercicio 3-->
+
+    table>tr>(td.table-data)*3
+    <!--Comando para clases e ID, punto 1 del ejercicio-->
+    form:get[action=/action_page.php]>label[for=fname]{First name:}+input[type=text id=fname name=fname]+input[type=submit value=Submit]
+    <!--Comando para formularios, INCOMPLETO, punto 2 del ejercicio-->
+
+</body>
+
+</html>
